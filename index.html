@@ -2,14 +2,26 @@
 <html lang="ja">
   <head>
     <title>インディーーーーーーーーズを聞いてくれ！</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
   </head>
   <body>
     <h1>良い曲</h1>
-    <p>
-      おすすめの曲を紹介します
-    </p>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4mZC1IJP53xH9Q1aDxGux1?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    <p>おすすめの曲を紹介します</p>
+    <iframe id="spotify-player" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    <p>好きでしたか？</p>
+    <div class="button-instance">
+      <div id="like-button-instance"></div>
+      <div id="soso-button-instance"></div>
+      <button id="like-button" onclick="switchSpotifySong()">
+        好き
+      </button>
+      <button id="soso-button">
+        そうでも...
+      </button>
+    </div>
   </body>
 </html>

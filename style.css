@@ -1,0 +1,73 @@
+body {
+  background: #eee;
+  font-family: 'Shippori Mincho B1', serif;
+  text-align: center;
+}
+
+#spotify-player {
+  border-radius:12px;
+}
+
+#like-button {
+  border-radius: 24px;
+  border: none;
+  background: #ee827c;
+  color: white;
+  padding: 4px 0;
+  width: 160px;
+  height: 32px;
+  font-size: 16px;
+  transition: transform .5s;
+  z-index: 0;
+}
+
+#like-button-instance:hover ~ #like-button {
+  transform: scale(1.1);
+}
+
+#like-button-instance:hover ~ #soso-button {
+  transform: scale(0.9);
+}
+
+#soso-button {
+  border-radius: 24px;
+  border: none;
+  background: #aaa;
+  color: white;
+  width: 160px;
+  height: 32px;
+  padding: 4px 0;
+  font-size: 16px;
+  transition: transform .5s;
+  z-index: 0;
+}
+
+#soso-button-instance:hover ~ #soso-button {
+  transform: scale(1.1);
+}
+
+#soso-button-instance:hover ~ #like-button {
+  transform: scale(0.9);
+}
+
+.button-instance {
+  position: relative;
+}
+
+#like-button-instance {
+  position: absolute;
+  width: 160px;
+  height: 32px;
+  top: 0;
+  left: calc(50vw - 170px);
+  z-index: 10;
+}
+
+#soso-button-instance {
+  position: absolute;
+  width: 160px;
+  height: 32px;
+  top: 0;
+  right: calc(50vw - 170px);
+  z-index: 10;
+}
