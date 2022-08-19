@@ -21,8 +21,15 @@ body {
   }
 }
 
+.impression-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #impression {
   margin-bottom: 40px;
+  width: 70vw;
 }
 
 #like-button {
