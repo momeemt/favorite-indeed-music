@@ -6,17 +6,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="index.js"></script>
   </head>
   <body>
-    <h1>良い曲</h1>
-    <p>おすすめの曲を紹介します</p>
+    <h1>良い曲紹介オタク</h1>
+    <p>良い曲を布教したいオタクです。<br />おすすめの曲を紹介します！！！</p>
     <iframe id="spotify-player" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    <p>好きでしたか？</p>
+    <p id="impression"></p>
+    <p>好きでしたか？（次の曲に遷移します）</p>
     <div class="button-instance">
       <div id="like-button-instance"></div>
       <div id="soso-button-instance"></div>
-      <button id="like-button" onclick="switchSpotifySong()">
+      <button id="like-button">
         好き
       </button>
       <button id="soso-button">
