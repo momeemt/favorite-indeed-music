@@ -5,7 +5,24 @@ body {
 }
 
 #spotify-player {
-  border-radius:12px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 0px) and (max-device-width: 780px) {
+  #spotify-player {
+    width: 70vw;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  #spotify-player {
+    width: 50vw;
+  }
+}
+
+#impression {
+  margin-bottom: 40px;
 }
 
 #like-button {
@@ -14,6 +31,7 @@ body {
   background: #ee827c;
   color: white;
   padding: 4px 0;
+  margin: 0 5px;
   width: 160px;
   height: 32px;
   font-size: 16px;
@@ -37,6 +55,7 @@ body {
   width: 160px;
   height: 32px;
   padding: 4px 0;
+  margin: 0 5px;
   font-size: 16px;
   transition: transform .5s;
   z-index: 0;
@@ -56,18 +75,18 @@ body {
 
 #like-button-instance {
   position: absolute;
-  width: 160px;
+  width: 120px;
   height: 32px;
   top: 0;
-  left: calc(50vw - 170px);
+  left: calc(50vw - 135px);
   z-index: 10;
 }
 
 #soso-button-instance {
   position: absolute;
-  width: 160px;
+  width: 120px;
   height: 32px;
   top: 0;
-  right: calc(50vw - 170px);
+  right: calc(50vw - 135px);
   z-index: 10;
 }
